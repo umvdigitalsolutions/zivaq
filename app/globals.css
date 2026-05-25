@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fbf8f2;
+  --foreground: #0f172a;
+  --brand-50: #f3f4ff;
+  --brand-500: #4f46e5;
+  --brand-600: #4338ca;
+  --accent: #d9bf8b;
+}
+
+@layer base {
+  html, body {
+    background-color: var(--background);
+    color: var(--foreground);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: var(--font-geist-sans), system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  }
+  a { text-decoration: none; }
+  p, li {
+    text-align: justify;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    hyphens: auto;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #071026;
+    --foreground: #e6eef8;
+  }
+}
+
+/* Utility for large hero headings balance fallback */
+.text-balance { text-wrap: balance; }
+
+@layer components {
+  .fancy-gradient {
+    background: linear-gradient(90deg, #4338ca, #7c3aed, #4f46e5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 200% 200%;
+    animation: gradientShift 6s linear infinite;
+  }
+
+  .glow-round {
+    box-shadow: 0 8px 30px rgba(79,70,229,0.12);
+  }
+
+  .glass {
+    background-color: rgba(255,255,255,0.55);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.6);
+  }
+
+  .reveal { opacity: 0; transform: translateY(24px) scale(0.995); transition: opacity 700ms ease, transform 700ms ease; }
+  .reveal-visible { opacity: 1; transform: translateY(0) scale(1); }
+
+  .floating { animation: float 6s ease-in-out infinite; transform-origin: center; }
+
+  .shine::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent); transform: translateX(-110%); transition: transform 900ms ease; pointer-events: none; }
+  .shine:hover::after { transform: translateX(110%); }
+}
+
+@keyframes gradientShift { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+@keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-8px); } 100% { transform: translateY(0px); } }
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 2px;
+  width: 0%;
+  background: #0d7f79;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
