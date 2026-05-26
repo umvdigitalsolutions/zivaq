@@ -4,6 +4,7 @@ export const metadata = {
 };
 
 import Reveal from "../components/Reveal";
+import ContactForm from "./ContactForm";
 
 export default function Page() {
   return (
@@ -62,25 +63,7 @@ export default function Page() {
                 <h2 className="text-2xl font-semibold text-[#15254e]">Send us a message</h2>
                 <p className="mt-2 text-sm text-gray-600">Provide a few details and our team will respond within one business day.</p>
 
-                <form className="mt-6 grid grid-cols-1 gap-4" action="#" method="post">
-                  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                    <input name="firstName" aria-label="First name" placeholder="First name" className="rounded-md border-gray-200 px-3 py-2 shadow-sm" />
-                    <input name="lastName" aria-label="Last name" placeholder="Last name" className="rounded-md border-gray-200 px-3 py-2 shadow-sm" />
-                  </div>
-
-                  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                    <input name="email" type="email" aria-label="Email" placeholder="Email address" className="rounded-md border-gray-200 px-3 py-2 shadow-sm" />
-                    <input name="phone" aria-label="Phone" placeholder="Phone" className="rounded-md border-gray-200 px-3 py-2 shadow-sm" />
-                  </div>
-
-                  <input name="company" aria-label="Company" placeholder="Company (optional)" className="rounded-md border-gray-200 px-3 py-2 shadow-sm" />
-
-                  <textarea name="message" aria-label="Message" placeholder="How can we help?" rows={6} className="rounded-md border-gray-200 px-3 py-2 shadow-sm" />
-
-                  <div className="mt-2">
-                    <button type="submit" className="inline-flex items-center rounded-full bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow hover:bg-indigo-700">Send Message</button>
-                  </div>
-                </form>
+                <ContactForm />
               </div>
             </Reveal>
 
