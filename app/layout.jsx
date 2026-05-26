@@ -16,6 +16,11 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "ZivaQ Pharma",
   description: "Trusted nutraceutical manufacturing partner",
+  icons: {
+    icon: "/zivaq.png",
+    shortcut: "/zivaq.png",
+    apple: "/zivaq.png",
+  },
 };
 
 export default function RootLayout({ children }) {
