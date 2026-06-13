@@ -4,8 +4,6 @@ import {
   Pill,
   CircleDot,
   FlaskConical,
-  Droplets,
-  Candy,
   Package,
   CheckCircle2,
   Sparkles,
@@ -47,28 +45,6 @@ const products = [
     color: "from-green-50 to-[#fbf8f2]",
     iconBg: "bg-green-100",
     iconColor: "text-green-600",
-  },
-  {
-    id: "softgels",
-    title: "Softgels",
-    icon: Droplets,
-    description:
-      "Softgel manufacturing support for oil-based ingredients, premium supplement formats, and polished retail presentation.",
-    capabilities: ["Bottled softgels", "Private label packaging"],
-    color: "from-purple-50 to-[#fbf8f2]",
-    iconBg: "bg-purple-100",
-    iconColor: "text-purple-600",
-  },
-  {
-    id: "gummies",
-    title: "Gummies",
-    icon: Candy,
-    description:
-      "Consumer-friendly gummy supplement formats developed for flavor, texture, consistency, and scalable production.",
-    capabilities: ["Bottles", "Pouches", "Custom packaging options"],
-    color: "from-pink-50 to-[#fbf8f2]",
-    iconBg: "bg-pink-100",
-    iconColor: "text-pink-600",
   },
 ];
 
@@ -122,8 +98,8 @@ export default function ProductList() {
             </h1>
             <p className="mt-5 text-lg leading-8 text-gray-600">
               ZivaQ Pharmaceuticals supports scalable production across capsules,
-              tablets, powder blends, softgels, and gummies with practical
-              formulation, packaging, and production support.
+              tablets, and powder blends with practical formulation, packaging,
+              and production support.
             </p>
           </div>
         </Reveal>
