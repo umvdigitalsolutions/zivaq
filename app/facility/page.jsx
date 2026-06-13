@@ -244,7 +244,7 @@ export default function FacilityPage() {
                 A scalable manufacturing environment built for clean, consistent production
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600 max-w-3xl">
-                ZivaQ's East Brunswick facility is designed around efficient
+                ZivaQ&apos;s East Brunswick facility is designed around efficient
                 material flow, ISO-oriented cleanroom standards, high-volume
                 production capacity, and the documentation discipline dietary
                 supplement brands expect from a dependable contract manufacturer.
@@ -554,7 +554,7 @@ export default function FacilityPage() {
                 </h2>
                 <p className="mt-5 text-base leading-8 text-slate-300">
                   Our East Brunswick, New Jersey facility positions ZivaQ at the
-                  center of one of the country's most active supplement
+                  center of one of the country&apos;s most active supplement
                   distribution corridors — with convenient access to major
                   shipping lanes, ports, and regional logistics networks.
                 </p>

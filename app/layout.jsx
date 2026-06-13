@@ -3,6 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Preloader from "./components/Preloader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Preloader />
         <div className="min-h-screen flex flex-col">
           <Header />
           <main className="flex-1">{children}</main>
