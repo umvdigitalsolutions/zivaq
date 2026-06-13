@@ -1,3 +1,17 @@
+export const metadata = {
+  title:
+    "ZivaQ Pharma | Nutraceutical Contract Manufacturer in USA (NJ)",
+  description:
+    "ZivaQ Pharma is a trusted cGMP nutraceutical & dietary supplement contract manufacturer in New Jersey, USA. Capsules, tablets, powders, softgels & private label. Get a free quote.",
+  alternates: { canonical: "https://zivaqpharma.com" },
+  openGraph: {
+    title: "ZivaQ Pharma | Nutraceutical Contract Manufacturer USA",
+    description:
+      "Trusted cGMP supplement manufacturing partner in NJ. Capsules, tablets, powders & private label. Get a free quote today.",
+    url: "https://zivaqpharma.com",
+  },
+};
+
 import Hero from "./components/Hero";
 
 const services = [
@@ -142,7 +156,7 @@ export default function Home() {
               <div className="absolute -left-6 -top-6 h-24 w-24 rounded-full bg-[#d9bf8b]/25 blur-2xl" />
               <div className="absolute -bottom-8 -right-4 h-28 w-28 rounded-full bg-[#15254e]/15 blur-2xl" />
 
-              <div className="relative rounded-[30px] border border-white/70 bg-gradient-to-br from-white/90 to-[#f4eee3] p-8 shadow-[0_24px_80px_rgba(21,37,78,0.10)] backdrop-blur-sm">
+              <div className="relative rounded-[30px] border border-white/70 bg-linear-to-br from-white/90 to-[#f4eee3] p-8 shadow-[0_24px_80px_rgba(21,37,78,0.10)] backdrop-blur-sm">
                 <div className="flex items-center justify-between">
                   <span className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
                     Why ZivaQ
@@ -259,7 +273,7 @@ export default function Home() {
                 key={service.title}
                 className="group rounded-[28px] border border-white/80 bg-white/80 p-7 shadow-[0_12px_40px_rgba(21,37,78,0.06)] backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(21,37,78,0.10)]"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-[#15254e] to-[#27407e] text-sm font-semibold text-white shadow-md">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-linear-to-br from-[#15254e] to-[#27407e] text-sm font-semibold text-white shadow-md">
                   {`0${index + 1}`}
                 </div>
 
@@ -271,7 +285,7 @@ export default function Home() {
                   {service.desc}
                 </p>
 
-                <div className="mt-6 h-px w-full bg-gradient-to-r from-[#d9bf8b] to-transparent" />
+                <div className="mt-6 h-px w-full bg-linear-to-r from-[#d9bf8b] to-transparent" />
               </div>
             ))}
           </div>
@@ -290,7 +304,7 @@ export default function Home() {
             ].map((item) => (
               <div
                 key={item.label}
-                className="rounded-[24px] border border-[#efe7d8] bg-[#fbf8f2] p-8 text-center shadow-sm transition duration-300 hover:-translate-y-1"
+                className="rounded-3xl border border-[#efe7d8] bg-[#fbf8f2] p-8 text-center shadow-sm transition duration-300 hover:-translate-y-1"
               >
                 <div className="text-3xl font-semibold tracking-tight text-[#15254e]">
                   {item.value}
@@ -333,6 +347,140 @@ export default function Home() {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="bg-white py-24">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: [
+                {
+                  "@type": "Question",
+                  name: "What nutraceutical and supplement formats does ZivaQ manufacture?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "ZivaQ Pharmaceuticals manufactures capsules (gelatin and HPMC), tablets (coated, uncoated, chewable), powder blends, softgels, and gummies. We support private label, custom formulation, and contract manufacturing programs for supplement brands across the USA.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Are you cGMP compliant and FDA-registered?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "ZivaQ Pharmaceuticals operates with cGMP-oriented systems including batch documentation, supplier qualification, in-process quality checks, and cleanroom production areas. FDA facility registration is planned as part of our ongoing compliance roadmap.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Do you offer private label supplement manufacturing?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Yes. ZivaQ offers full private label supplement manufacturing including formulation support, packaging design coordination, labeling, and finished goods production for supplement brands across the USA.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "What is the minimum order quantity (MOQ) for supplement contract manufacturing?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "MOQ varies by product format and formulation complexity. Contact our team at (732) 208-9240 or info@zivaqpharma.com to discuss requirements for your specific product.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "How long does supplement contract manufacturing take?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Lead times depend on product format, formulation complexity, and order volume. Our team works with each brand to plan a realistic production timeline from formulation sign-off through finished goods delivery.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Does ZivaQ ship supplements nationwide across the USA?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Yes. Located in East Brunswick, New Jersey, ZivaQ Pharmaceuticals serves supplement brands across the entire United States. Our facility provides access to major East Coast shipping corridors and nationwide distribution networks.",
+                  },
+                },
+              ],
+            }),
+          }}
+        />
+
+        <div className="mx-auto max-w-4xl px-6">
+          <div className="text-center mb-14">
+            <span className="inline-flex rounded-full border border-[#d9bf8b]/60 bg-[#fffaf0] px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-[#7a5c28]">
+              FAQ
+            </span>
+            <h2 className="mt-5 text-3xl font-semibold text-[#15254e] md:text-4xl">
+              Common questions about our nutraceutical manufacturing
+            </h2>
+            <p className="mt-4 text-base leading-8 text-slate-600 max-w-2xl mx-auto">
+              Everything supplement brands typically ask before starting a contract manufacturing partnership.
+            </p>
+          </div>
+
+          <div className="divide-y divide-[#efe7d8]">
+            {[
+              {
+                q: "What supplement formats does ZivaQ manufacture?",
+                a: "We manufacture capsules (gelatin and HPMC), tablets (coated, uncoated, chewable), powder blends, softgels, and gummies. We support private label, custom formulation, and contract manufacturing programs for supplement brands across the USA.",
+              },
+              {
+                q: "Are you cGMP compliant and FDA-registered?",
+                a: "ZivaQ operates with cGMP-oriented systems including batch documentation, supplier qualification, in-process quality checks, and cleanroom production areas. FDA facility registration is part of our planned compliance roadmap.",
+              },
+              {
+                q: "Do you offer private label supplement manufacturing?",
+                a: "Yes. We offer full private label programs including formulation support, packaging coordination, labeling, and finished goods manufacturing for supplement brands across the United States.",
+              },
+              {
+                q: "What is the minimum order quantity (MOQ)?",
+                a: "MOQ varies by format and formulation complexity. Contact our team at (732) 208-9240 or info@zivaqpharma.com to discuss your specific product requirements.",
+              },
+              {
+                q: "How long does the manufacturing process take?",
+                a: "Lead times depend on product format, formulation complexity, and order volume. Our team works with each brand to plan a realistic timeline from formulation sign-off through finished goods delivery.",
+              },
+              {
+                q: "Does ZivaQ ship supplements nationwide across the USA?",
+                a: "Yes. Located in East Brunswick, New Jersey, we serve supplement brands across the entire United States. Our facility has access to major East Coast shipping corridors and nationwide distribution networks.",
+              },
+            ].map(({ q, a }) => (
+              <details key={q} className="group py-5">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4">
+                  <h3 className="text-base font-semibold text-[#15254e] group-open:text-[#7a5c28]">
+                    {q}
+                  </h3>
+                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[#d9bf8b]/50 bg-[#fffaf0] text-[#7a5c28] transition-transform duration-200 group-open:rotate-45">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4">
+                      <path d="M10.75 4.75a.75.75 0 0 0-1.5 0v4.5h-4.5a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 0 0 1.5 0v-4.5h4.5a.75.75 0 0 0 0-1.5h-4.5v-4.5Z" />
+                    </svg>
+                  </span>
+                </summary>
+                <p className="mt-3 text-sm leading-7 text-slate-600 max-w-3xl">
+                  {a}
+                </p>
+              </details>
+            ))}
+          </div>
+
+          <div className="mt-10 rounded-2xl border border-[#efe7d8] bg-[#fbf8f2] p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p className="text-sm font-medium text-[#15254e]">
+              Have a specific question about your supplement project?
+            </p>
+            <a
+              href="/contact"
+              className="shrink-0 inline-flex items-center rounded-full bg-[#15254e] px-6 py-2.5 text-sm font-semibold text-white shadow transition hover:-translate-y-0.5 hover:bg-[#1d3368]"
+            >
+              Get a Free Quote
+            </a>
           </div>
         </div>
       </section>

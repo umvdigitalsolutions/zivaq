@@ -16,12 +16,85 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "ZivaQ Pharmaceuticals",
-  description: "Trusted dietary supplement manufacturing partner",
+  metadataBase: new URL("https://zivaqpharma.com"),
+  title: {
+    template: "%s | ZivaQ Pharmaceuticals",
+    default:
+      "ZivaQ Pharmaceuticals | Dietary Supplement Manufacturer in New Jersey",
+  },
+  description:
+    "ZivaQ Pharmaceuticals is a cGMP nutraceutical and dietary supplement contract manufacturer at 15 Cotters Lane, East Brunswick, NJ 08816. We produce capsules, tablets, powder blends, softgels, and gummies for supplement brands across the USA.",
+  keywords: [
+    "nutraceutical contract manufacturer",
+    "dietary supplement contract manufacturing",
+    "supplement manufacturer USA",
+    "private label supplement manufacturer",
+    "cGMP supplement manufacturing",
+    "vitamin manufacturer USA",
+    "nutraceutical manufacturer NJ",
+    "supplement manufacturer New Jersey",
+    "contract manufacturing East Brunswick NJ",
+    "capsule manufacturer NJ",
+    "tablet manufacturing contract",
+    "powder supplement manufacturer",
+    "softgel contract manufacturer",
+    "private label vitamins",
+    "custom supplement formulation",
+    "15 Cotters Lane East Brunswick",
+    "Middlesex County NJ supplement manufacturer",
+  ],
+  authors: [{ name: "ZivaQ Pharmaceuticals" }],
+  creator: "ZivaQ Pharmaceuticals",
+  publisher: "ZivaQ Pharmaceuticals",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://zivaqpharma.com",
+    siteName: "ZivaQ Pharmaceuticals",
+    title:
+      "ZivaQ Pharmaceuticals | Nutraceutical Contract Manufacturer in New Jersey, USA",
+    description:
+      "Trusted cGMP nutraceutical & dietary supplement contract manufacturer in East Brunswick, NJ. Capsules, tablets, powders, softgels & private label. Get a free quote.",
+    images: [
+      {
+        url: "/ZIVAQFINAL.png",
+        width: 1200,
+        height: 630,
+        alt: "ZivaQ Pharmaceuticals – Dietary Supplement Manufacturer, East Brunswick NJ",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ZivaQ Pharmaceuticals | Nutraceutical Contract Manufacturer NJ",
+    description:
+      "Trusted cGMP nutraceutical & supplement contract manufacturer in East Brunswick, New Jersey. Capsules, tablets, powders, softgels & private label.",
+    images: ["/ZIVAQFINAL.png"],
+  },
   icons: {
     icon: "/ZIVAQFINAL.png",
     shortcut: "/ZIVAQFINAL.png",
     apple: "/ZIVAQFINAL.png",
+  },
+  alternates: {
+    canonical: "https://zivaqpharma.com",
+  },
+  other: {
+    "geo.region": "US-NJ",
+    "geo.placename": "East Brunswick, New Jersey",
+    "geo.position": "40.4279;-74.4157",
+    ICBM: "40.4279, -74.4157",
   },
 };
 
@@ -32,6 +105,128 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": ["LocalBusiness", "Manufacturer"],
+                  "@id": "https://zivaqpharma.com/#business",
+                  name: "ZivaQ Pharmaceuticals",
+                  legalName: "ZivaQ Pharmaceuticals Inc.",
+                  description:
+                    "cGMP-oriented dietary supplement contract manufacturer specializing in capsules, tablets, powder blends, softgels, and gummies for supplement brands across the USA.",
+                  url: "https://zivaqpharma.com",
+                  logo: "https://zivaqpharma.com/ZIVAQFINAL.png",
+                  image: "https://zivaqpharma.com/ZIVAQFINAL.png",
+                  telephone: "+17322089240",
+                  email: "info@zivaqpharma.com",
+                  address: {
+                    "@type": "PostalAddress",
+                    streetAddress: "15 Cotters Lane",
+                    addressLocality: "East Brunswick",
+                    addressRegion: "NJ",
+                    postalCode: "08816",
+                    addressCountry: "US",
+                  },
+                  geo: {
+                    "@type": "GeoCoordinates",
+                    latitude: 40.4279,
+                    longitude: -74.4157,
+                  },
+                  openingHoursSpecification: [
+                    {
+                      "@type": "OpeningHoursSpecification",
+                      dayOfWeek: [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                      ],
+                      opens: "09:00",
+                      closes: "17:00",
+                    },
+                  ],
+                  areaServed: [
+                    { "@type": "State", "name": "New Jersey" },
+                    { "@type": "Country", "name": "United States" },
+                  ],
+                  hasOfferCatalog: {
+                    "@type": "OfferCatalog",
+                    name: "Dietary Supplement Manufacturing Services",
+                    itemListElement: [
+                      {
+                        "@type": "Offer",
+                        itemOffered: {
+                          "@type": "Service",
+                          name: "Capsule Manufacturing",
+                          description:
+                            "Hard-shell gelatin and HPMC capsule filling for dietary supplements.",
+                        },
+                      },
+                      {
+                        "@type": "Offer",
+                        itemOffered: {
+                          "@type": "Service",
+                          name: "Tablet Manufacturing",
+                          description:
+                            "Coated, uncoated, chewable, and specialty tablet production.",
+                        },
+                      },
+                      {
+                        "@type": "Offer",
+                        itemOffered: {
+                          "@type": "Service",
+                          name: "Powder Blend Manufacturing",
+                          description:
+                            "Custom powder blending for sports nutrition and wellness supplements.",
+                        },
+                      },
+                      {
+                        "@type": "Offer",
+                        itemOffered: {
+                          "@type": "Service",
+                          name: "Softgel Manufacturing",
+                          description:
+                            "Oil-based softgel encapsulation for premium supplement formats.",
+                        },
+                      },
+                      {
+                        "@type": "Offer",
+                        itemOffered: {
+                          "@type": "Service",
+                          name: "Gummy Supplement Manufacturing",
+                          description:
+                            "Consumer-ready gummy supplement production with accurate dosing.",
+                        },
+                      },
+                    ],
+                  },
+                  priceRange: "$$",
+                  foundingLocation: {
+                    "@type": "Place",
+                    address: {
+                      "@type": "PostalAddress",
+                      addressLocality: "East Brunswick",
+                      addressRegion: "NJ",
+                      addressCountry: "US",
+                    },
+                  },
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": "https://zivaqpharma.com/#website",
+                  url: "https://zivaqpharma.com",
+                  name: "ZivaQ Pharmaceuticals",
+                  publisher: { "@id": "https://zivaqpharma.com/#business" },
+                },
+              ],
+            }),
+          }}
+        />
         <Preloader />
         <div className="min-h-screen flex flex-col">
           <Header />

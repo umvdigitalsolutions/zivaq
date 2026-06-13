@@ -1,7 +1,24 @@
 export const metadata = {
-  title: "Facility - ZivaQ Pharmaceuticals",
+  title:
+    "Manufacturing Facility | 15 Cotters Lane, East Brunswick NJ | ZivaQ Pharmaceuticals",
   description:
-    "ZivaQ Pharmaceuticals facility details, production capacity, cleanrooms, equipment, and planned certifications.",
+    "ZivaQ Pharmaceuticals operates a 45,000 sq ft dietary supplement manufacturing facility at 15 Cotters Lane, East Brunswick, NJ 08816. ISO Class 8 cleanrooms, 10M+ tablets/shift, cGMP systems, and full quality documentation.",
+  keywords: [
+    "supplement manufacturing facility New Jersey",
+    "15 Cotters Lane East Brunswick NJ",
+    "ISO cleanroom supplement manufacturer NJ",
+    "cGMP manufacturing facility New Jersey",
+    "dietary supplement factory East Brunswick",
+    "supplement production capacity NJ",
+  ],
+  alternates: { canonical: "https://zivaqpharma.com/facility" },
+  openGraph: {
+    title:
+      "Manufacturing Facility in East Brunswick, NJ | ZivaQ Pharmaceuticals",
+    description:
+      "45,000 sq ft supplement manufacturing facility at 15 Cotters Lane, East Brunswick, NJ. ISO Class 8 cleanrooms, high-volume production, cGMP systems.",
+    url: "https://zivaqpharma.com/facility",
+  },
 };
 
 import {

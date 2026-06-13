@@ -1,7 +1,21 @@
 export const metadata = {
-  title: "About - ZivaQ Pharmaceuticals",
+  title: "About ZivaQ Pharma | Our Supplement Manufacturing Mission",
   description:
-    "About ZivaQ Pharmaceuticals - mission, vision, capabilities, leadership, and commitment to quality.",
+    "Learn about ZivaQ Pharma — a New Jersey-based nutraceutical manufacturer committed to quality, innovation, and cGMP-compliant dietary supplement production at 15 Cotters Lane, East Brunswick, NJ 08816.",
+  keywords: [
+    "ZivaQ Pharmaceuticals about",
+    "nutraceutical manufacturer New Jersey",
+    "supplement manufacturer East Brunswick NJ",
+    "dietary supplement company New Jersey",
+    "contract manufacturer Middlesex County NJ",
+  ],
+  alternates: { canonical: "https://zivaqpharma.com/about" },
+  openGraph: {
+    title: "About ZivaQ Pharma | Nutraceutical Manufacturer in East Brunswick, NJ",
+    description:
+      "Learn about ZivaQ Pharma — a cGMP nutraceutical and dietary supplement contract manufacturer based in East Brunswick, New Jersey.",
+    url: "https://zivaqpharma.com/about",
+  },
 };
 
 import {
@@ -39,9 +53,9 @@ const leadershipFocus = [
 export default function Page() {
   return (
     <main className="bg-white text-slate-900">
-      <section className="relative overflow-hidden bg-gradient-to-b from-white via-[#fbf8f2] to-white pb-14 pt-16">
+      <section className="relative overflow-hidden bg-linear-to-b from-white via-[#fbf8f2] to-white pb-14 pt-16">
         <div
-          className="absolute -left-32 top-0 h-[36rem] w-[36rem] rounded-full bg-[#d9bf8b]/20 blur-3xl"
+          className="absolute -left-32 top-0 h-144 w-xl rounded-full bg-[#d9bf8b]/20 blur-3xl"
           aria-hidden="true"
         />
 

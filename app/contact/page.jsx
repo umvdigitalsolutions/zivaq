@@ -1,6 +1,24 @@
 export const metadata = {
-  title: "Contact - ZivaQ Pharmaceuticals",
-  description: "Contact ZivaQ Pharmaceuticals - office address, phone and contact form.",
+  title:
+    "Contact ZivaQ Pharma | Get a Free Supplement Manufacturing Quote",
+  description:
+    "Contact ZivaQ Pharma in East Brunswick, NJ for nutraceutical & supplement contract manufacturing. Call (732) 208-9240 or request a free quote online. 15 Cotters Lane, East Brunswick, NJ 08816.",
+  keywords: [
+    "contact ZivaQ Pharmaceuticals",
+    "supplement manufacturer contact NJ",
+    "nutraceutical manufacturing quote NJ",
+    "15 Cotters Lane East Brunswick NJ 08816",
+    "ZivaQ phone number",
+    "supplement contract manufacturing quote",
+    "East Brunswick NJ pharmaceutical company",
+  ],
+  alternates: { canonical: "https://zivaqpharma.com/contact" },
+  openGraph: {
+    title: "Contact ZivaQ Pharma | Free Supplement Manufacturing Quote",
+    description:
+      "Get in touch with ZivaQ Pharma at 15 Cotters Lane, East Brunswick, NJ 08816. Call (732) 208-9240 for nutraceutical contract manufacturing.",
+    url: "https://zivaqpharma.com/contact",
+  },
 };
 
 import Reveal from "../components/Reveal";
@@ -9,8 +27,8 @@ import ContactForm from "./ContactForm";
 export default function Page() {
   return (
     <main className="bg-white text-slate-900">
-      <section className="relative overflow-hidden bg-gradient-to-b from-white via-[#fbf8f2] to-white pt-20 pb-16">
-        <div className="absolute -left-32 top-0 h-[28rem] w-[28rem] rounded-full bg-[#d9bf8b]/20 blur-3xl transform rotate-12" aria-hidden="true" />
+      <section className="relative overflow-hidden bg-linear-to-b from-white via-[#fbf8f2] to-white pt-20 pb-16">
+        <div className="absolute -left-32 top-0 h-112 w-md rounded-full bg-[#d9bf8b]/20 blur-3xl transform rotate-12" aria-hidden="true" />
 
         <div className="mx-auto max-w-7xl px-6 lg:flex lg:items-center lg:gap-16 lg:px-8">
           <div className="lg:w-2/3">
