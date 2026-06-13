@@ -1,130 +1,150 @@
 "use client";
+
 import Reveal from "../components/Reveal";
 import TiltCard from "../components/TiltCard";
 
-const nutraProducts = [
+const products = [
   {
-    id: "multivitamin",
-    title: "Multivitamin Formulations",
-    image: "https://vitacarepharma.com/wp-content/uploads/2024/05/Professional-filling-bottles-with-vitamins-845x684.jpg",
-    description: "Custom multivitamin blends produced to cGMP standards with flexible delivery forms.",
-    packaging: "Bottles • Blister • Sachets",
+    id: "capsules",
+    title: "Capsules",
+    description:
+      "Flexible capsule manufacturing for custom dietary supplement blends, standardized actives, and private label programs.",
+    capabilities: "Bottles, blister packs, and bulk packaging",
   },
   {
-    id: "probiotic",
-    title: "Probiotic Blends",
-    image: "https://vitacarepharma.com/wp-content/uploads/2024/05/Person-taking-probiotic-supplement-845x684.jpg",
-    description: "Stability-focused probiotic formulations in capsules, powders and sachets.",
-    packaging: "Bottles • Sachets",
+    id: "tablets",
+    title: "Tablets",
+    description:
+      "Scalable tablet production designed for consistent dosage, clean presentation, and dependable batch-to-batch execution.",
+    capabilities: "Coated, uncoated, chewable, and specialty tablets",
   },
   {
-    id: "protein",
-    title: "Protein & Powder Supplements",
-    image: "https://vitacarepharma.com/wp-content/uploads/2024/05/Person-outside-drinking-from-water-bottle-845x684.jpg",
-    description: "Premium powder blends for sports, recovery and meal-replacement applications.",
-    packaging: "Tubs • Sachets • Bulk",
+    id: "powder-blends",
+    title: "Powder Blends",
+    description:
+      "Precision powder blending for wellness, sports nutrition, functional nutrition, and custom supplement formulas.",
+    capabilities: "Tubs, stick packs, sachets, and bulk formats",
   },
   {
-    id: "collagen",
-    title: "Collagen Supplements",
-    image: "https://vitacarepharma.com/wp-content/uploads/2024/05/Worker-stacking-supplement-containers--845x684.jpg",
-    description: "Hydrolyzed collagen formulas for beauty and joint support with scalable production.",
-    packaging: "Bottles • Stick Packs",
+    id: "softgels",
+    title: "Softgels",
+    description:
+      "Softgel manufacturing support for oil-based ingredients, premium supplement formats, and polished retail presentation.",
+    capabilities: "Bottled softgels and private label packaging",
   },
   {
-    id: "keto",
-    title: "Keto & Weight Management",
-    image: "https://vitacarepharma.com/wp-content/uploads/2024/05/Person-with-tapemeasure-around-waste-845x684.jpg",
-    description: "Keto-friendly and weight management formulations developed for safety and efficacy.",
-    packaging: "Bottles • Sachets",
-  },
-  {
-    id: "herbal",
-    title: "Herbal Extracts",
-    image: "https://vitacarepharma.com/wp-content/uploads/2024/05/Herbal-Supplemenets-on-table-845x684.jpg",
-    description: "Standardized botanical extracts manufactured with traceability and potency controls.",
-    packaging: "Bottles • Blister",
-  },
-  {
-    id: "brain",
-    title: "Cognitive & Brain Enhancers",
-    image: "https://vitacarepharma.com/wp-content/uploads/2024/05/Professional-filling-bottles-with-vitamins-845x684.jpg",
-    description: "Nootropic blends designed for cognitive support using evidence-backed ingredients.",
-    packaging: "Bottles • Capsules",
-  },
-  {
-    id: "pet",
-    title: "Pet Supplements",
-    image: "https://vitacarepharma.com/wp-content/uploads/2024/05/Worker-stacking-supplement-containers--845x684.jpg",
-    description: "Veterinary-grade supplements for companion animals with robust quality assurance.",
-    packaging: "Bottles • Bulk",
+    id: "gummies",
+    title: "Gummies",
+    description:
+      "Consumer-friendly gummy supplement formats developed for flavor, texture, consistency, and scalable production.",
+    capabilities: "Bottles, pouches, and custom packaging options",
   },
 ];
 
-const pharmaProducts = [
+const productLines = [
   {
-    id: "sterile-injectable",
-    title: "Sterile Injectable Solutions",
-    image: "https://vitacarepharma.com/wp-content/uploads/2024/05/Worker-stacking-supplement-containers--845x684.jpg",
-    description: "Aseptic manufacturing for injectable drug products with validated sterile fills.",
-    packaging: "Vials • Ampoules",
+    id: "acetaminophen-500",
+    title: "Acetaminophen 500 mg",
+    format: "Tablets",
   },
   {
-    id: "tableted-api",
-    title: "Tableted API Blends",
-    image: "https://vitacarepharma.com/wp-content/uploads/2024/05/Professional-filling-bottles-with-vitamins-845x684.jpg",
-    description: "Controlled-release and immediate-release tableted formulations with robust QC.",
-    packaging: "Blister • Bottles",
+    id: "diphenhydramine-25",
+    title: "Diphenhydramine 25 mg",
+    format: "Tablets",
   },
   {
-    id: "ophthalmic-solution",
-    title: "Ophthalmic & Topical Solutions",
-    image: "https://vitacarepharma.com/wp-content/uploads/2024/05/Person-taking-probiotic-supplement-845x684.jpg",
-    description: "Sterile formulations for ophthalmic and topical applications under GMP.",
-    packaging: "Drops • Bottles",
+    id: "sodium-chloride",
+    title: "Sodium Chloride",
+    format: "Tablets",
   },
   {
-    id: "iv-solutions",
-    title: "IV & Parenteral Solutions",
-    image: "https://vitacarepharma.com/wp-content/uploads/2024/05/Person-outside-drinking-from-water-bottle-845x684.jpg",
-    description: "Large-scale parenteral and IV solutions with tight sterility controls.",
-    packaging: "Bags • Vials",
+    id: "sodium-bicarbonate",
+    title: "Sodium Bicarbonate",
+    format: "Tablets",
   },
   {
-    id: "oncology-injectable",
-    title: "Oncology Injectable Formulas",
-    image: "https://vitacarepharma.com/wp-content/uploads/2024/05/Man-reading-label-on-supplement-bottle-845x684.jpg",
-    description: "Specialized oncology injectables produced in segregated suites with validated processes.",
-    packaging: "Vials • Ampoules",
+    id: "magnesium-oxide-400",
+    title: "Magnesium Oxide 400 mg",
+    format: "Tablets",
   },
   {
-    id: "hormone-implant",
-    title: "Hormonal & Implantable Products",
-    image: "https://vitacarepharma.com/wp-content/uploads/2024/05/Women-reading-label-on-supplement-container-845x684.jpg",
-    description: "Precision-dosed formulations for hormonal therapies and implantable devices.",
-    packaging: "Implant • Vials",
+    id: "guaifenesin-400",
+    title: "Guaifenesin 400 mg",
+    format: "Tablets",
   },
 ];
 
-export default function ProductList({ category = "nutraceutical" }) {
-  const products = category === "pharmaceutical" ? pharmaProducts : nutraProducts;
-
+export default function ProductList() {
   return (
-    <section className="py-12 bg-white">
+    <section className="bg-white py-16">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {products.map((p) => (
-            <Reveal key={p.id} className="">
+        <div className="max-w-3xl">
+          <p className="inline-block rounded-full border border-[#d9bf8b] bg-[#fffaf0] px-3 py-1 text-sm font-medium uppercase tracking-wide text-[#7a5c28]">
+            Product Formats
+          </p>
+          <h1 className="mt-6 text-4xl font-extrabold tracking-tight text-[#15254e] sm:text-5xl">
+            Dietary supplement manufacturing built around the formats brands need most
+          </h1>
+          <p className="mt-5 text-lg leading-8 text-gray-700">
+            ZivaQ Pharmaceuticals supports scalable production across capsules,
+            tablets, powder blends, softgels, and gummies with practical
+            formulation, packaging, and production support.
+          </p>
+        </div>
+
+        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {products.map((product) => (
+            <Reveal key={product.id}>
               <TiltCard>
-                <article className="group overflow-hidden rounded-2xl bg-white glass p-0 shadow-lg transition-transform hover:-translate-y-3 hover:shadow-2xl">
-                    <div className="p-6">
-                      <h4 className="text-lg font-semibold text-gray-900">{p.title}</h4>
-                      <p className="mt-2 text-sm text-gray-600">{p.description}</p>
-                    </div>
+                <article className="h-full rounded-2xl border border-[#efe7d8] bg-[#fbf8f2] p-7 shadow-sm transition-transform hover:-translate-y-2 hover:shadow-xl">
+                  <h2 className="text-xl font-semibold text-[#15254e]">
+                    {product.title}
+                  </h2>
+                  <p className="mt-4 text-sm leading-7 text-gray-700">
+                    {product.description}
+                  </p>
+                  <div className="mt-6 border-t border-[#d9bf8b]/40 pt-4">
+                    <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a5c28]">
+                      Capabilities
+                    </p>
+                    <p className="mt-2 text-sm text-gray-700">
+                      {product.capabilities}
+                    </p>
+                  </div>
                 </article>
               </TiltCard>
             </Reveal>
           ))}
+        </div>
+
+        <div className="mt-16 border-t border-[#efe7d8] pt-12">
+          <div className="max-w-3xl">
+            <p className="inline-block rounded-full border border-[#d9bf8b] bg-[#fffaf0] px-3 py-1 text-sm font-medium uppercase tracking-wide text-[#7a5c28]">
+              Product Line
+            </p>
+            <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-[#15254e]">
+              Additional tablet products
+            </h2>
+            <p className="mt-4 text-base leading-7 text-gray-700">
+              Selected high-demand tablet products supported through scalable
+              manufacturing, packaging, and documentation workflows.
+            </p>
+          </div>
+
+          <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {productLines.map((product) => (
+              <Reveal key={product.id}>
+                <article className="h-full border border-[#efe7d8] bg-white p-6 shadow-sm">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a5c28]">
+                    {product.format}
+                  </p>
+                  <h3 className="mt-3 text-lg font-semibold text-[#15254e]">
+                    {product.title}
+                  </h3>
+                </article>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </div>
     </section>

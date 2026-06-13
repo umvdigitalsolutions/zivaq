@@ -68,20 +68,20 @@ export default function Hero() {
         {/* Left */}
         <div>
           <div className="mb-8 inline-flex items-center rounded-full border border-[#d9bf8b]/60 bg-white/75 px-4 py-1.5 text-sm font-semibold uppercase tracking-[0.18em] text-[#7a5c28] shadow-sm backdrop-blur-md">
-            Pharmaceutical and Nutraceutical Excellence
+            Dietary Supplement Manufacturing Excellence
           </div>
 
           <h1 className="max-w-4xl text-5xl font-semibold tracking-[-0.04em] text-[#15254e] sm:text-6xl lg:text-7xl">
-            Manufacturing that makes your brand feel
+            Precision. Purity. Performance.
             <span className="mt-2 block bg-gradient-to-r from-[#7a5c28] via-[#a27a33] to-[#7a5c28] bg-clip-text text-transparent">
-              premium at every stage.
+              Without Compromise.
             </span>
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-700 sm:text-xl">
-            From formulation support to polished finished output, ZivaQ Pharma
-            delivers a refined, compliant, and confidence-building production
-            experience for modern healthcare brands.
+            From formulation support to polished finished output, ZivaQ
+            Pharmaceuticals delivers a refined, compliant, and confidence
+            building production experience for modern supplement brands.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row items-center gap-4">
@@ -150,7 +150,7 @@ export default function Hero() {
                   <p className="mt-2 text-base leading-7 text-slate-200">
                     Structured production support designed to balance precision,
                     presentation, and dependable execution for premium
-                    healthcare brands.
+                    supplement brands.
                   </p>
                 </div>
 

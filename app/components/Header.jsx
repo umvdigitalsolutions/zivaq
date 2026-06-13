@@ -6,9 +6,9 @@ import Image from "next/image";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
+  { href: "/about", label: "About Us" },
   { href: "/product", label: "Products" },
-  { href: "/rnd", label: "R&D" },
+  { href: "/facility", label: "Facility" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -32,7 +32,7 @@ export default function Header() {
           <div className="rounded-2xl border border-white/40 bg-white/90 px-3 py-2 shadow-lg">
             <Image
               src="/zivaq.png"
-              alt="ZivaQ Pharma"
+              alt="ZivaQ Pharmaceuticals"
               width={260}
               height={90}
               priority

@@ -12,8 +12,8 @@ export default function Footer() {
 
           <p className="mt-4 max-w-sm text-sm leading-7 text-slate-200">
             Premium contract manufacturing and packaging solutions for
-            nutraceutical and pharmaceutical brands seeking trust, consistency,
-            and refined production standards.
+            dietary supplement brands seeking trust, consistency, and refined
+            production standards.
           </p>
 
           <p className="mt-5 text-sm leading-7 text-slate-200">
@@ -56,8 +56,8 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/rnd" className="transition hover:text-[#d9bf8b]">
-                R&amp;D
+              <Link href="/facility" className="transition hover:text-[#d9bf8b]">
+                Facility
               </Link>
             </li>
             <li>
@@ -105,7 +105,7 @@ export default function Footer() {
       </div>
 
       <div className="relative border-t border-white/10 py-5 text-center text-sm text-slate-300">
-        © {new Date().getFullYear()} ZivaQ Pharma. All rights reserved.
+        © {new Date().getFullYear()} ZivaQ Pharmaceuticals. All rights reserved.
         <span className="mx-2">•</span>
         <a href="#" className="transition hover:text-[#d9bf8b]">
           Privacy Policy

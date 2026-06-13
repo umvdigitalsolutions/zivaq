@@ -1,5 +1,5 @@
-import CategorySwitcher from "./CategorySwitcher";
+import ProductList from "./ProductList";
 
 export default function ProductPage() {
-  return <CategorySwitcher />;
+  return <ProductList />;
 }

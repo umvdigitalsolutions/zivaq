@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Contact — ZivaQ Pharmaceutical",
-  description: "Contact ZivaQ Pharmaceutical — office address, phone and contact form.",
+  title: "Contact - ZivaQ Pharmaceuticals",
+  description: "Contact ZivaQ Pharmaceuticals - office address, phone and contact form.",
 };
 
 import Reveal from "../components/Reveal";
@@ -18,7 +18,7 @@ export default function Page() {
 
             <h1 className="mt-6 text-4xl font-extrabold tracking-tight text-[#15254e] sm:text-5xl">Get in touch with ZivaQ</h1>
 
-            <p className="mt-4 max-w-2xl text-lg text-gray-700">For quotes, technical enquiries, or partnership opportunities, contact our team. We support formulation, manufacturing, and global distribution for pharmaceutical and nutraceutical brands.</p>
+            <p className="mt-4 max-w-2xl text-lg text-gray-700">For quotes, technical enquiries, or partnership opportunities, contact our team. We support formulation, manufacturing, packaging, and distribution planning for dietary supplement brands.</p>
 
             <div className="mt-6 flex flex-col sm:flex-row gap-4">
               <a

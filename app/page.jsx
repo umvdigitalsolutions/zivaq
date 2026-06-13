@@ -2,16 +2,16 @@ import Hero from "./components/Hero";
 
 const services = [
   {
+    title: "Formulation",
+    desc: "Practical formulation support that helps translate product goals into scalable dietary supplement formats.",
+  },
+  {
     title: "Contract Manufacturing",
-    desc: "End-to-end nutraceutical and pharmaceutical manufacturing support with dependable systems and scalable execution.",
+    desc: "End-to-end dietary supplement manufacturing support with dependable systems and scalable execution.",
   },
   {
     title: "Packaging & Labeling",
     desc: "Refined packaging and labeling solutions designed for compliance, shelf appeal, and market-ready presentation.",
-  },
-  {
-    title: "Quality Control",
-    desc: "Strict quality checks and process-led systems to maintain consistency, safety, and long-term brand trust.",
   },
 ];
 
@@ -50,7 +50,7 @@ const testimonials = [
     quote:
       "ZivaQ brought clarity, structure, and dependable quality to our manufacturing journey from day one.",
     name: "Brand Partner",
-    role: "Nutraceutical Company",
+    role: "Dietary Supplement Company",
   },
   {
     quote:
@@ -114,16 +114,16 @@ export default function Home() {
               </span>
 
               <h2 className="mt-6 max-w-3xl text-3xl font-semibold tracking-tight text-[#15254e] md:text-5xl">
-                Trusted manufacturing solutions for modern pharmaceutical and
-                nutraceutical brands.
+                Trusted manufacturing solutions for modern dietary supplement
+                brands.
               </h2>
 
               <p className="mt-6 max-w-3xl text-base leading-8 text-slate-700 md:text-lg">
-                At ZivaQ Pharma, we are committed to delivering high-quality
-                manufacturing support with precision, consistency, and
-                professionalism. Our approach combines production excellence,
-                refined packaging support, and dependable systems to help brands
-                grow with confidence.
+                At ZivaQ Pharmaceuticals, we are committed to delivering
+                high-quality manufacturing support with precision, consistency,
+                and professionalism. Our approach combines production
+                excellence, refined packaging support, and dependable systems to
+                help brands grow with confidence.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
@@ -209,7 +209,7 @@ export default function Home() {
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {[
               "cGMP Focused",
-              "Quality Control",
+              "Documented Standards",
               "Packaging Excellence",
               "Reliable Processes",
             ].map((item) => (
@@ -369,73 +369,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact CTA */}
-      <section id="contact" className="relative overflow-hidden bg-[#fbf8f2] py-24">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(21,37,78,0.08),transparent_24%),radial-gradient(circle_at_bottom_right,rgba(217,191,139,0.10),transparent_28%)]" />
-        <div className="relative mx-auto max-w-5xl px-6">
-          <div className="rounded-[34px] border border-white/70 bg-gradient-to-br from-white/90 to-[#f4eee3] p-8 shadow-[0_24px_80px_rgba(21,37,78,0.10)] backdrop-blur-sm md:p-12">
-            <div className="max-w-3xl">
-              <span className="inline-flex rounded-full border border-[#d9bf8b]/60 bg-white px-4 py-1 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a5c28]">
-                Contact Us
-              </span>
-
-              <h3 className="mt-5 text-3xl font-semibold tracking-tight text-[#15254e] md:text-4xl">
-                Let’s discuss your manufacturing requirements
-              </h3>
-
-              <p className="mt-5 text-base leading-8 text-slate-700">
-                Connect with ZivaQ Pharma for dependable production support,
-                professional packaging solutions, and a manufacturing approach
-                built around quality and trust.
-              </p>
-            </div>
-
-            <div className="mt-10 grid gap-6 md:grid-cols-2">
-              <div className="rounded-[24px] border border-white/80 bg-white/80 p-6 shadow-sm">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
-                  Address
-                </p>
-                <p className="mt-3 text-base leading-7 text-slate-800">
-                  15 Cotters Lane, East Brunswick,
-                  <br />
-                  NJ 08816, USA
-                </p>
-              </div>
-
-              <div className="rounded-[24px] border border-white/80 bg-white/80 p-6 shadow-sm">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
-                  Contact Number
-                </p>
-                <a
-                  href="tel:7322089240"
-                  className="mt-3 inline-block text-lg font-semibold text-[#15254e] transition hover:text-[#7a5c28]"
-                >
-                  (732) 208-9240
-                </a>
-                <p className="mt-3 text-sm leading-7 text-slate-700">
-                  Reach out for business inquiries, product discussions, and
-                  manufacturing collaborations.
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-8 flex flex-col sm:flex-row items-center gap-4">
-              <a
-                href="tel:7322089240"
-                className="w-full sm:w-auto text-center rounded-full bg-[#15254e] px-6 py-3 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(21,37,78,0.18)] transition hover:-translate-y-0.5 hover:bg-[#1d3368]"
-              >
-                Call Now
-              </a>
-              <a
-                href="/product"
-                className="w-full sm:w-auto text-center rounded-full border border-[#d9bf8b] px-6 py-3 text-sm font-semibold text-[#7a5c28] transition hover:bg-white"
-              >
-                Explore Services
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   );
 }
