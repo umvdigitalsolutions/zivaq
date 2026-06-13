@@ -4,14 +4,18 @@ export const metadata = {
     "About ZivaQ Pharmaceuticals - mission, vision, capabilities, leadership, and commitment to quality.",
 };
 
+import {
+  CircleDot,
+  Pill,
+  PackageCheck,
+  ArrowRight,
+} from "lucide-react";
 import Reveal from "../components/Reveal";
 
 const capacity = [
-  ["1,600", "Pallet storage capacity"],
-  ["15,000 kg", "Powder processing per shift"],
-  ["10M", "Tablets per shift"],
-  ["11M", "Capsules per shift"],
-  ["100/min", "Automated bottle packaging"],
+  { value: "10M", label: "Tablets per shift", icon: CircleDot },
+  { value: "11M", label: "Capsules per shift", icon: Pill },
+  { value: "100/min", label: "Automated bottle fills", icon: PackageCheck },
 ];
 
 const capabilities = [
@@ -146,34 +150,50 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="bg-[#15254e] py-14 text-white">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <section className="relative overflow-hidden bg-[#15254e] py-20 text-white">
+        <div
+          className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(217,191,139,0.12),transparent_55%),radial-gradient(ellipse_at_bottom_right,rgba(217,191,139,0.08),transparent_50%)]"
+          aria-hidden="true"
+        />
+
+        <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
           <Reveal>
-            <div className="grid gap-8 lg:grid-cols-[0.75fr_1.25fr] lg:items-start">
+            <div className="grid gap-12 lg:grid-cols-[1fr_1.2fr] lg:items-center">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#d9bf8b]">
+                <span className="inline-flex items-center gap-1.5 rounded-full border border-[#d9bf8b]/40 bg-white/5 px-3 py-1 text-sm font-medium uppercase tracking-wide text-[#d9bf8b]">
                   Production Capacity
-                </p>
-                <h2 className="mt-3 text-4xl font-extrabold tracking-tight md:text-5xl">
+                </span>
+                <h2 className="mt-4 text-4xl font-extrabold tracking-tight md:text-5xl">
                   Built for serious manufacturing scale
                 </h2>
-                <p className="mt-4 text-base leading-8 text-slate-200">
-                  Capacity is planned for high-volume production across core
-                  supplement formats, with room to support growing brands,
-                  repeat programs, and dependable turnaround expectations.
+                <p className="mt-5 text-base leading-8 text-slate-300">
+                  Our output capacity is designed to support both launch-scale
+                  runs and high-volume repeat programs — with automated packaging
+                  lines and multi-format production running concurrently.
                 </p>
+                <a
+                  href="/facility"
+                  className="mt-8 inline-flex items-center gap-2 rounded-full border border-[#d9bf8b]/40 bg-white/5 px-5 py-2.5 text-sm font-semibold text-[#d9bf8b] transition-all duration-200 hover:bg-white/10 hover:border-[#d9bf8b]/70"
+                >
+                  See full facility details
+                  <ArrowRight className="h-4 w-4" />
+                </a>
               </div>
 
-              <div className="divide-y divide-white/15">
-                {capacity.map(([value, label]) => (
+              <div className="grid gap-4 sm:grid-cols-3">
+                {capacity.map(({ value, label, icon: Icon }) => (
                   <div
                     key={label}
-                    className="grid gap-3 py-4 sm:grid-cols-[13rem_1fr] sm:items-baseline"
+                    className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-all duration-300 hover:border-[#d9bf8b]/50 hover:bg-white/10"
                   >
-                    <p className="text-4xl font-extrabold tracking-tight text-white md:text-5xl">
+                    <div className="absolute right-0 top-0 h-14 w-14 rounded-bl-2xl bg-[#d9bf8b]/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" aria-hidden="true" />
+                    <div className="inline-flex items-center justify-center rounded-xl border border-[#d9bf8b]/30 bg-[#d9bf8b]/10 p-2.5">
+                      <Icon className="h-5 w-5 text-[#d9bf8b]" strokeWidth={1.8} />
+                    </div>
+                    <p className="mt-5 text-3xl font-extrabold tracking-tight text-white">
                       {value}
                     </p>
-                    <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#d9bf8b]">
+                    <p className="mt-2 text-xs font-semibold uppercase tracking-[0.16em] text-[#d9bf8b]">
                       {label}
                     </p>
                   </div>
