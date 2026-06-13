@@ -23,7 +23,7 @@ export const metadata = {
       "ZivaQ Pharmaceuticals | Dietary Supplement Manufacturer in New Jersey",
   },
   description:
-    "ZivaQ Pharmaceuticals is a cGMP nutraceutical and dietary supplement contract manufacturer at 15 Cotters Lane, East Brunswick, NJ 08816. We produce capsules, tablets, powder blends, softgels, and gummies for supplement brands across the USA.",
+    "ZivaQ Pharmaceuticals is a cGMP nutraceutical and dietary supplement contract manufacturer at 15 Cotters Lane, East Brunswick, NJ 08816. We produce capsules, tablets, and powder blends for supplement brands across the USA.",
   keywords: [
     "nutraceutical contract manufacturer",
     "dietary supplement contract manufacturing",
@@ -37,7 +37,6 @@ export const metadata = {
     "capsule manufacturer NJ",
     "tablet manufacturing contract",
     "powder supplement manufacturer",
-    "softgel contract manufacturer",
     "private label vitamins",
     "custom supplement formulation",
     "15 Cotters Lane East Brunswick",
@@ -65,7 +64,7 @@ export const metadata = {
     title:
       "ZivaQ Pharmaceuticals | Nutraceutical Contract Manufacturer in New Jersey, USA",
     description:
-      "Trusted cGMP nutraceutical & dietary supplement contract manufacturer in East Brunswick, NJ. Capsules, tablets, powders, softgels & private label. Get a free quote.",
+      "Trusted cGMP nutraceutical & dietary supplement contract manufacturer in East Brunswick, NJ. Capsules, tablets, powders & private label. Get a free quote.",
     images: [
       {
         url: "/ZIVAQFINAL.png",
@@ -79,7 +78,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "ZivaQ Pharmaceuticals | Nutraceutical Contract Manufacturer NJ",
     description:
-      "Trusted cGMP nutraceutical & supplement contract manufacturer in East Brunswick, New Jersey. Capsules, tablets, powders, softgels & private label.",
+      "Trusted cGMP nutraceutical & supplement contract manufacturer in East Brunswick, New Jersey. Capsules, tablets, powders & private label.",
     images: ["/ZIVAQFINAL.png"],
   },
   icons: {
@@ -117,7 +116,7 @@ export default function RootLayout({ children }) {
                   name: "ZivaQ Pharmaceuticals",
                   legalName: "ZivaQ Pharmaceuticals Inc.",
                   description:
-                    "cGMP-oriented dietary supplement contract manufacturer specializing in capsules, tablets, powder blends, softgels, and gummies for supplement brands across the USA.",
+                    "cGMP-oriented dietary supplement contract manufacturer specializing in capsules, tablets, and powder blends for supplement brands across the USA.",
                   url: "https://zivaqpharma.com",
                   logo: "https://zivaqpharma.com/ZIVAQFINAL.png",
                   image: "https://zivaqpharma.com/ZIVAQFINAL.png",
@@ -183,24 +182,6 @@ export default function RootLayout({ children }) {
                           name: "Powder Blend Manufacturing",
                           description:
                             "Custom powder blending for sports nutrition and wellness supplements.",
-                        },
-                      },
-                      {
-                        "@type": "Offer",
-                        itemOffered: {
-                          "@type": "Service",
-                          name: "Softgel Manufacturing",
-                          description:
-                            "Oil-based softgel encapsulation for premium supplement formats.",
-                        },
-                      },
-                      {
-                        "@type": "Offer",
-                        itemOffered: {
-                          "@type": "Service",
-                          name: "Gummy Supplement Manufacturing",
-                          description:
-                            "Consumer-ready gummy supplement production with accurate dosing.",
                         },
                       },
                     ],

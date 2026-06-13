@@ -1,11 +1,11 @@
 export const metadata = {
   title:
-    "ZivaQ Pharma | Nutraceutical Contract Manufacturer in USA (NJ)",
+    "ZivaQ Pharmaceuticals | Nutraceutical Contract Manufacturer in USA (NJ)",
   description:
-    "ZivaQ Pharma is a trusted cGMP nutraceutical & dietary supplement contract manufacturer in New Jersey, USA. Capsules, tablets, powders, softgels & private label. Get a free quote.",
+    "ZivaQ Pharmaceuticals is a trusted cGMP nutraceutical & dietary supplement contract manufacturer in New Jersey, USA. Capsules, tablets, powders & private label. Get a free quote.",
   alternates: { canonical: "https://zivaqpharma.com" },
   openGraph: {
-    title: "ZivaQ Pharma | Nutraceutical Contract Manufacturer USA",
+    title: "ZivaQ Pharmaceuticals | Nutraceutical Contract Manufacturer USA",
     description:
       "Trusted cGMP supplement manufacturing partner in NJ. Capsules, tablets, powders & private label. Get a free quote today.",
     url: "https://zivaqpharma.com",
@@ -365,7 +365,7 @@ export default function Home() {
                   name: "What nutraceutical and supplement formats does ZivaQ manufacture?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "ZivaQ Pharmaceuticals manufactures capsules (gelatin and HPMC), tablets (coated, uncoated, chewable), powder blends, softgels, and gummies. We support private label, custom formulation, and contract manufacturing programs for supplement brands across the USA.",
+                    text: "ZivaQ Pharmaceuticals manufactures capsules (gelatin and HPMC), tablets (coated, uncoated, chewable), and powder blends. We support private label, custom formulation, and contract manufacturing programs for supplement brands across the USA.",
                   },
                 },
                 {
@@ -430,7 +430,7 @@ export default function Home() {
             {[
               {
                 q: "What supplement formats does ZivaQ manufacture?",
-                a: "We manufacture capsules (gelatin and HPMC), tablets (coated, uncoated, chewable), powder blends, softgels, and gummies. We support private label, custom formulation, and contract manufacturing programs for supplement brands across the USA.",
+                a: "We manufacture capsules (gelatin and HPMC), tablets (coated, uncoated, chewable), and powder blends. We support private label, custom formulation, and contract manufacturing programs for supplement brands across the USA.",
               },
               {
                 q: "Are you cGMP compliant and FDA-registered?",

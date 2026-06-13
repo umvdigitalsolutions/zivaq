@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "About ZivaQ Pharma | Our Supplement Manufacturing Mission",
+  title: "About ZivaQ Pharmaceuticals | Our Supplement Manufacturing Mission",
   description:
-    "Learn about ZivaQ Pharma — a New Jersey-based nutraceutical manufacturer committed to quality, innovation, and cGMP-compliant dietary supplement production at 15 Cotters Lane, East Brunswick, NJ 08816.",
+    "Learn about ZivaQ Pharmaceuticals — a New Jersey-based nutraceutical manufacturer committed to quality, innovation, and cGMP-compliant dietary supplement production at 15 Cotters Lane, East Brunswick, NJ 08816.",
   keywords: [
     "ZivaQ Pharmaceuticals about",
     "nutraceutical manufacturer New Jersey",
@@ -11,9 +11,9 @@ export const metadata = {
   ],
   alternates: { canonical: "https://zivaqpharma.com/about" },
   openGraph: {
-    title: "About ZivaQ Pharma | Nutraceutical Manufacturer in East Brunswick, NJ",
+    title: "About ZivaQ Pharmaceuticals | Nutraceutical Manufacturer in East Brunswick, NJ",
     description:
-      "Learn about ZivaQ Pharma — a cGMP nutraceutical and dietary supplement contract manufacturer based in East Brunswick, New Jersey.",
+      "Learn about ZivaQ Pharmaceuticals — a cGMP nutraceutical and dietary supplement contract manufacturer based in East Brunswick, New Jersey.",
     url: "https://zivaqpharma.com/about",
   },
 };
@@ -33,7 +33,7 @@ const capacity = [
 ];
 
 const capabilities = [
-  "Formulation support for tablets, capsules, powders, softgels, and gummies",
+  "Formulation support for tablets, capsules, and powders",
   "Contract manufacturing for scalable dietary supplement programs",
   "Packaging and labeling support for retail-ready and private label products",
   "Process planning, batch documentation, and repeatable operating workflows",
@@ -104,7 +104,7 @@ export default function Page() {
 
                 <p>
                   We work across the major supplement formats brands rely on:
-                  capsules, tablets, powder blends, softgels, and gummies. Our
+                  capsules, tablets, and powder blends. Our
                   approach is structured around clear planning, controlled
                   workflows, reliable communication, and production systems that
                   can support both new launches and repeat programs.

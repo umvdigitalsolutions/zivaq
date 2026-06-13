@@ -36,8 +36,6 @@ import {
   Truck,
   PackageCheck,
   Sparkles,
-  Droplets,
-  Candy,
   Package,
   TestTube,
   Gauge,
@@ -147,20 +145,6 @@ const productionZones = [
     tags: ["11M / shift", "Gelatin & HPMC", "Private label"],
   },
   {
-    icon: Droplets,
-    title: "Softgel Manufacturing",
-    description:
-      "Softgel production support for oil-based supplement ingredients. Suited for omega blends, vitamin E, CBD-adjacent, and other oil-soluble nutrient formats.",
-    tags: ["Oil-based actives", "Bottled softgels", "Premium formats"],
-  },
-  {
-    icon: Candy,
-    title: "Gummy Production",
-    description:
-      "Consumer-ready gummy supplement manufacturing optimized for consistent texture, accurate dosing, and retail-level presentation across multiple packaging formats.",
-    tags: ["Consistent texture", "Accurate dosing", "Bottles & pouches"],
-  },
-  {
     icon: Package,
     title: "Packaging & Labeling",
     description:
@@ -175,7 +159,6 @@ const equipment = [
   { icon: Layers, label: "V-blenders and ribbon blenders" },
   { icon: Gauge, label: "High-speed bottle filling lines" },
   { icon: Package, label: "Blister packaging equipment" },
-  { icon: Droplets, label: "Softgel encapsulation machines" },
   { icon: Thermometer, label: "Temperature-controlled coating pans" },
   { icon: Scale, label: "Inline checkweighing systems" },
   { icon: ScanLine, label: "Metal detection systems" },

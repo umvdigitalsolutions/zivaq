@@ -1,8 +1,8 @@
 export const metadata = {
   title:
-    "Contact ZivaQ Pharma | Get a Free Supplement Manufacturing Quote",
+    "Contact ZivaQ Pharmaceuticals | Get a Free Supplement Manufacturing Quote",
   description:
-    "Contact ZivaQ Pharma in East Brunswick, NJ for nutraceutical & supplement contract manufacturing. Call (732) 208-9240 or request a free quote online. 15 Cotters Lane, East Brunswick, NJ 08816.",
+    "Contact ZivaQ Pharmaceuticals in East Brunswick, NJ for nutraceutical & supplement contract manufacturing. Call (732) 208-9240 or request a free quote online. 15 Cotters Lane, East Brunswick, NJ 08816.",
   keywords: [
     "contact ZivaQ Pharmaceuticals",
     "supplement manufacturer contact NJ",
@@ -14,9 +14,9 @@ export const metadata = {
   ],
   alternates: { canonical: "https://zivaqpharma.com/contact" },
   openGraph: {
-    title: "Contact ZivaQ Pharma | Free Supplement Manufacturing Quote",
+    title: "Contact ZivaQ Pharmaceuticals | Free Supplement Manufacturing Quote",
     description:
-      "Get in touch with ZivaQ Pharma at 15 Cotters Lane, East Brunswick, NJ 08816. Call (732) 208-9240 for nutraceutical contract manufacturing.",
+      "Get in touch with ZivaQ Pharmaceuticals at 15 Cotters Lane, East Brunswick, NJ 08816. Call (732) 208-9240 for nutraceutical contract manufacturing.",
     url: "https://zivaqpharma.com/contact",
   },
 };
