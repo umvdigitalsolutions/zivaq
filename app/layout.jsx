@@ -25,6 +25,10 @@ export const metadata = {
   description:
     "ZivaQ Pharmaceuticals is a cGMP nutraceutical and dietary supplement contract manufacturer at 15 Cotters Lane, East Brunswick, NJ 08816. We produce capsules, tablets, and powder blends for supplement brands across the USA.",
   keywords: [
+    "ZivaQ",
+    "zivaq",
+    "ZivaQ Pharma",
+    "zivaqpharma",
     "nutraceutical contract manufacturer",
     "dietary supplement contract manufacturing",
     "supplement manufacturer USA",
