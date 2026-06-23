@@ -58,10 +58,10 @@ export default function Header() {
         {/* CTA (desktop) */}
         <div className="hidden md:flex items-center gap-6">
           <a
-            href="tel:7322089240"
+            href="tel:+17323536291"
             className="text-sm font-medium text-white/80 hover:text-[#d9bf8b]"
           >
-            (732) 208-9240
+            +1 (732) 353-6291
           </a>
 
           <Link
@@ -97,7 +97,7 @@ export default function Header() {
           ))}
 
           <div className="pt-2 border-t border-white/10 flex flex-col gap-3">
-            <a href="tel:7322089240" className="block text-sm font-medium text-white/90">(732) 208-9240</a>
+            <a href="tel:+17323536291" className="block text-sm font-medium text-white/90">+1 (732) 353-6291</a>
             <Link href="/contact" onClick={() => setOpen(false)} className="inline-flex w-full items-center justify-center px-4 py-2 rounded-full bg-[#d9bf8b] text-[#15254e] font-semibold shadow">Request Quote</Link>
           </div>
         </div>

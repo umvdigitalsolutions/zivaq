@@ -389,7 +389,7 @@ export default function Home() {
                   name: "What is the minimum order quantity (MOQ) for supplement contract manufacturing?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "MOQ varies by product format and formulation complexity. Contact our team at (732) 208-9240 or info@zivaqpharma.com to discuss requirements for your specific product.",
+                    text: "MOQ varies by product format and formulation complexity. Contact our team at +1 (732) 353-6291 or info@zivaqpharma.com to discuss requirements for your specific product.",
                   },
                 },
                 {
@@ -442,7 +442,7 @@ export default function Home() {
               },
               {
                 q: "What is the minimum order quantity (MOQ)?",
-                a: "MOQ varies by format and formulation complexity. Contact our team at (732) 208-9240 or info@zivaqpharma.com to discuss your specific product requirements.",
+                a: "MOQ varies by format and formulation complexity. Contact our team at +1 (732) 353-6291 or info@zivaqpharma.com to discuss your specific product requirements.",
               },
               {
                 q: "How long does the manufacturing process take?",

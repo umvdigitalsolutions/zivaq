@@ -25,10 +25,10 @@ export default function Footer() {
           <p className="mt-2 text-sm">
             Phone:{" "}
             <a
-              href="tel:7322089240"
+              href="tel:+17323536291"
               className="font-medium text-[#d9bf8b] transition hover:text-white"
             >
-              (732) 208-9240
+              +1 (732) 353-6291
             </a>
           </p>
         </div>

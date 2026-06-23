@@ -124,7 +124,7 @@ export default function RootLayout({ children }) {
                   url: "https://zivaqpharma.com",
                   logo: "https://zivaqpharma.com/ZIVAQFINAL.png",
                   image: "https://zivaqpharma.com/ZIVAQFINAL.png",
-                  telephone: "+17322089240",
+                  telephone: "+17323536291",
                   email: "info@zivaqpharma.com",
                   address: {
                     "@type": "PostalAddress",

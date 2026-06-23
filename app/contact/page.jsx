@@ -2,7 +2,7 @@ export const metadata = {
   title:
     "Contact ZivaQ Pharmaceuticals | Get a Free Supplement Manufacturing Quote",
   description:
-    "Contact ZivaQ Pharmaceuticals in East Brunswick, NJ for nutraceutical & supplement contract manufacturing. Call (732) 208-9240 or request a free quote online. 15 Cotters Lane, East Brunswick, NJ 08816.",
+    "Contact ZivaQ Pharmaceuticals in East Brunswick, NJ for nutraceutical & supplement contract manufacturing. Call +1 (732) 353-6291 or request a free quote online. 15 Cotters Lane, East Brunswick, NJ 08816.",
   keywords: [
     "contact ZivaQ Pharmaceuticals",
     "supplement manufacturer contact NJ",
@@ -16,7 +16,7 @@ export const metadata = {
   openGraph: {
     title: "Contact ZivaQ Pharmaceuticals | Free Supplement Manufacturing Quote",
     description:
-      "Get in touch with ZivaQ Pharmaceuticals at 15 Cotters Lane, East Brunswick, NJ 08816. Call (732) 208-9240 for nutraceutical contract manufacturing.",
+      "Get in touch with ZivaQ Pharmaceuticals at 15 Cotters Lane, East Brunswick, NJ 08816. Call +1 (732) 353-6291 for nutraceutical contract manufacturing.",
     url: "https://zivaqpharma.com/contact",
   },
 };
@@ -40,10 +40,10 @@ export default function Page() {
 
             <div className="mt-6 flex flex-col sm:flex-row gap-4">
               <a
-                href="tel:+17322089240"
+                href="tel:+17323536291"
                 className="w-full sm:w-auto inline-flex items-center justify-center rounded-full bg-[#15254e] px-5 py-3 text-sm font-semibold text-white shadow hover:-translate-y-0.5 transition text-center whitespace-normal"
               >
-                Call (732) 208-9240
+                Call +1 (732) 353-6291
               </a>
 
               <a
@@ -96,7 +96,7 @@ export default function Page() {
                     East Brunswick, NJ 08816
                   </address>
 
-                  <p className="mt-3 text-sm text-gray-700">Phone: <a href="tel:+17322089240" className="text-indigo-600">(732) 208-9240</a></p>
+                  <p className="mt-3 text-sm text-gray-700">Phone: <a href="tel:+17323536291" className="text-indigo-600">+1 (732) 353-6291</a></p>
                   <p className="mt-1 text-sm text-gray-700">Email: <a href="mailto:info@zivaqpharma.com" className="text-indigo-600">info@zivaqpharma.com</a></p>
 
                   <div className="mt-6">
@@ -116,7 +116,7 @@ export default function Page() {
 
       <section className="py-12 bg-zinc-900 text-white">
         <div className="mx-auto max-w-7xl px-6 text-center">
-          <p className="text-sm">Prefer direct contact? Call us at <a href="tel:+17322089240" className="underline">(732) 208-9240</a> or email <a href="mailto:info@zivaqpharma.com" className="underline">info@zivaqpharma.com</a></p>
+          <p className="text-sm">Prefer direct contact? Call us at <a href="tel:+17323536291" className="underline">+1 (732) 353-6291</a> or email <a href="mailto:info@zivaqpharma.com" className="underline">info@zivaqpharma.com</a></p>
         </div>
       </section>
     </main>
